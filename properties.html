@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Properties - Buy & Rent</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-theme="bright">
+    
+    <header class="header">
+        <a href="index.html" class="logo">EasyHomes</a>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="properties.html" class="nav-link active">Properties</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="sell.html" class="nav-link">Sell/Rent</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
+    </header>
+
+    <main>
+        <section class="section-container">
+            <h1 class="section-title">Current Listings</h1>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 30px; padding: 10px; background-color: var(--color-surface); border-radius: 8px;">
+                <select style="padding: 8px; border-radius: 4px;">
+                    <option>Type: All</option>
+                    <option>For Sale</option>
+                    <option>For Rent</option>
+                </select>
+                <input type="number" placeholder="Min Beds" style="padding: 8px; border-radius: 4px; width: 100px;">
+                <select style="padding: 8px; border-radius: 4px;">
+                    <option>Sort by: Price High</option>
+                    <option>Sort by: Price Low</option>
+                    <option>Sort by: Newest</option>
+                </select>
+                <button class="btn primary-btn" style="padding: 8px 15px;">Apply Filter</button>
+            </div>
+
+            <div class="card-list">
+                
+                <article class="property-card">
+                    <img src="https://via.placeholder.com/300x180/f44336/FFFFFF?text=Sale+House" alt="House for Sale" class="property-image">
+                    <div class="card-content">
+                        <h3>Family Home</h3>
+                        <p style="font-weight: bold;">$550,000</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text);">3 Bed | 2 Bath | Suburb</p>
+                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                    </div>
+                </article>
+                
+                <article class="property-card">
+                    <img src="https://via.placeholder.com/300x180/03a9f4/FFFFFF?text=Rent+Studio" alt="Studio for Rent" class="property-image">
+                    <div class="card-content">
+                        <h3>Studio Rental</h3>
+                        <p style="font-weight: bold;">$1,800 / month</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text);">1 Bed | 1 Bath | Downtown</p>
+                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                    </div>
+                </article>
+
+                <article class="property-card">
+                    <img src="https://via.placeholder.com/300x180/4caf50/FFFFFF?text=Commercial+Land" alt="Commercial Property" class="property-image">
+                    <div class="card-content">
+                        <h3>Commercial Lot</h3>
+                        <p style="font-weight: bold;">$800,000</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text);">Zoned C-1 | 1 Acre</p>
+                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                    </div>
+                </article>
+
+                <article class="property-card">
+                    <img src="https://via.placeholder.com/300x180/ffeb3b/000000?text=Penthouse+View" alt="Penthouse" class="property-image">
+                    <div class="card-content">
+                        <h3>Luxury Penthouse</h3>
+                        <p style="font-weight: bold;">$3,500,000</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text);">5 Bed | 4 Bath | City View</p>
+                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                    </div>
+                </article>
+
+                <article class="property-card">
+                    <img src="https://via.placeholder.com/300x180/9c27b0/FFFFFF?text=Vacation+Rental" alt="Vacation Home" class="property-image">
+                    <div class="card-content">
+                        <h3>Beach Getaway</h3>
+                        <p style="font-weight: bold;">$4,200 / month</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text);">3 Bed | 2 Bath | Near Ocean</p>
+                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                    </div>
+                </article>
+
+                <article class="property-card">
+                    <img src="https://via.placeholder.com/300x180/ff9800/FFFFFF?text=New+Construction" alt="New Build" class="property-image">
+                    <div class="card-content">
+                        <h3>New Build Home</h3>
+                        <p style="font-weight: bold;">$720,000</p>
+                        <p style="font-size: 0.9rem; color: var(--color-text);">4 Bed | 3 Bath | Quick Sale</p>
+                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                    </div>
+                </article>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Easy Homes Real Estate. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple JS for theme switch
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            if (currentTheme === 'bright') {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = '🌙'; 
+            } else {
+                body.setAttribute('data-theme', 'bright');
+                themeToggle.textContent = '☀️'; 
+            }
+        });
+    </script>
+</body>
+</html>
