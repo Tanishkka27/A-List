@@ -24,10 +24,10 @@
         <section class="section-container">
             <h1 class="section-title">List Your Property with Us</h1>
             
-            <p style="text-align: center; max-width: 600px; margin: 0 auto 30px;">Fill out the form below to provide us with the initial details of your property. An agent will contact you shortly.</p>
+            <p style="text-align: center;color: black; max-width: 600px; margin: 0 auto 30px;">Fill out the form below to provide us with the initial details of your property. An agent will contact you shortly.</p>
 
-            <form style="max-width: 600px; margin: 0 auto; background-color: var(--color-surface); padding: 30px; border-radius: 8px;">
-                <h2 style="color: var(--color-primary); margin-bottom: 20px; text-align: center;">Property Submission Form</h2>
+            <form style="max-width: 600px; margin: 0 auto; background-color: aliceblue; padding: 30px; border-radius: 8px;">
+                <h2 style="color: darkcyan; margin-bottom: 20px; text-align: center;">Property Submission Form</h2>
                 
                 <div class="form-group">
                     <label for="listing-type">I want to:</label>
@@ -74,29 +74,14 @@
                     <input type="email" id="contact-email" name="contact-email" required>
                 </div>
                 
-                <button type="submit" class="btn primary-btn" style="width: 100%; margin-top: 15px;">Submit Property Details</button>
+                <button type="submit" class="btn primary-btn" style="width: 100%; margin-top: 15px; background-color: darkslategrey; color: antiquewhite;">Submit Property Details</button>
             </form>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Easy Homes Real Estate. All rights reserved.</p>
+        <p>A-List Homes Real Estate</p>
     </footer>
 
-    <script>
-        // Simple JS for theme switch
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            if (currentTheme === 'bright') {
-                body.setAttribute('data-theme', 'dark');
-                themeToggle.textContent = '🌙'; 
-            } else {
-                body.setAttribute('data-theme', 'bright');
-                themeToggle.textContent = '☀️'; 
-            }
-        });
-    </script>
 </body>
 </html>
