@@ -26,18 +26,18 @@
             
             <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-around;">
                 
-                <div style="flex: 1 1 300px; padding: 20px; background-color: var(--color-surface); border-radius: 8px; text-align: left;">
-                    <h2 style="color: var(--color-primary); margin-bottom: 20px;">Contact Information</h2>
-                    <p><strong>Address:</strong> 123 Real Estate Blvd, Suite 100, City, ST 12345</p>
-                    <p style="margin-top: 10px;"><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Email:</strong> <a href="mailto:info@easyhomes.com" style="color: var(--color-primary);">info@easyhomes.com</a></p>
-                    <p style="margin-top: 20px; font-weight: bold;">Office Hours:</p>
-                    <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+                <div style="flex: 1 1 300px; padding: 20px; background-color: aliceblue; border-radius: 8px; text-align: left;">
+                    <h2 style="color: darkcyan; margin-bottom: 20px;">Contact Information</h2>
+                    <p style="color: black;"><strong style="color: black;">Address:</strong> 123 Real Estate Blvd, Suite 100, City, ST 12345</p>
+                    <p style="margin-top: 10px; color: black;"><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong style="color: black;">Email:</strong> <a href="mailto:info@easyhomes.com" style="color: black;">info@easyhomes.com</a></p>
+                    <p style="margin-top: 20px; font-weight: bold;color: black;">Office Hours:</p>
+                    <p style="color: black;">Mon - Fri: 9:00 AM - 5:00 PM</p>
                 </div>
 
                 <div style="flex: 1 1 450px;">
-                    <form style="background-color: var(--color-surface); padding: 30px; border-radius: 8px;">
-                        <h2 style="color: var(--color-primary); margin-bottom: 20px; text-align: center;">Send Us a Message</h2>
+                    <form style="background-color: aliceblue; padding: 30px; border-radius: 8px;">
+                        <h2 style="color: darkcyan; margin-bottom: 20px; text-align: center;">Send Us a Message</h2>
                         
                         <div class="form-group">
                             <label for="name">Your Name</label>
@@ -67,23 +67,8 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Easy Homes Real Estate. All rights reserved.</p>
+        <p>A-List Homes Real Estate</p>
     </footer>
 
-    <script>
-        // Simple JS for theme switch
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            if (currentTheme === 'bright') {
-                body.setAttribute('data-theme', 'dark');
-                themeToggle.textContent = '🌙'; 
-            } else {
-                body.setAttribute('data-theme', 'bright');
-                themeToggle.textContent = '☀️'; 
-            }
-        });
-    </script>
 </body>
 </html>
