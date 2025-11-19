@@ -15,7 +15,6 @@
     --transition-speed: 0.2s;
 }
 
-/* Dark Mode Overrides */
 body[data-theme="dark"] {
     --color-primary: #64b5f6; /* Lighter blue */
     --color-background: #1f1f1f;
@@ -158,8 +157,7 @@ h1, h2 {
     resize: vertical;
     min-height: 100px;
 }
-
-/* --- Card Styles (Properties/Featured) --- */
+-- */
 .card-list {
     display: flex;
     justify-content: center;
