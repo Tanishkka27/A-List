@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body data-theme="bright">
     
     <header class="header">
-        <a href="index.html" class="logo">EasyHomes</a>
+        <a href="index.html" class="logo">A-LIST</a>
         <nav class="nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="properties.html" class="nav-link">Properties</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="sell.html" class="nav-link">Sell/Rent</a>
-            <a href="contact.html" class="nav-link active">Contact</a>
+            <a href="index.html" class="nav_bar">Home</a>
+            <a href="properties.html" class="nav_bar">Properties</a>
+            <a href="about.html" class="nav_bar">About Us</a>
+            <a href="sell.html" class="nav_bar">Sell/Rent</a>
+            <a href="contact.html" class="nav_bar selected">Contact</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
     </header>
@@ -24,50 +24,49 @@
         <section class="section-container">
             <h1 class="section-title">Get In Touch</h1>
             
-            <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-around;">
+            <div class="contact-grid">
                 
-                <div style="flex: 1 1 300px; padding: 20px; background-color: aliceblue; border-radius: 8px; text-align: left;">
-                    <h2 style="color: darkcyan; margin-bottom: 20px;">Contact Information</h2>
-                    <p style="color: black;"><strong style="color: black;">Address:</strong> 123 Real Estate Blvd, Suite 100, City, ST 12345</p>
-                    <p style="margin-top: 10px; color: black;"><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong style="color: black;">Email:</strong> <a href="mailto:info@easyhomes.com" style="color: black;">info@easyhomes.com</a></p>
-                    <p style="margin-top: 20px; font-weight: bold;color: black;">Office Hours:</p>
-                    <p style="color: black;">Mon - Fri: 9:00 AM - 5:00 PM</p>
+                <div class="contact-info-box">
+                    <h2 class="sub-title">Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Real Estate Blvd, Suite 100, City, ST 12345</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@easyhomes.com">info@easyhomes.com</a></p>
+                    <p class="office-hours-title">Office Hours:</p>
+                    <p class="office-hours">Mon - Fri: 9:00 AM - 5:00 PM</p>
                 </div>
 
-                <div style="flex: 1 1 450px;">
-                    <form style="background-color: aliceblue; padding: 30px; border-radius: 8px;">
-                        <h2 style="color: darkcyan; margin-bottom: 20px; text-align: center;">Send Us a Message</h2>
-                        
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn primary-btn" style="width: 100%; margin-top: 10px;">Send Message</button>
-                    </form>
-                </div>
+                <form class="contact-form">
+                    <h2 class="sub-title form-title">Send Us a Message</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn btn-full">Send Message</button>
+                </form>
+
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>A-List Homes Real Estate</p>
+        <p>A-List Real Estate</p>
     </footer>
 
 </body>

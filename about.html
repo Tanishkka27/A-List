@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Our Mission</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 <body data-theme="bright">
     
     <header class="header">
-        <a href="index.html" class="logo">EasyHomes</a>
+        <a href="index.html" class="logo">A-LIST</a>
         <nav class="nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="properties.html" class="nav-link">Properties</a>
-            <a href="about.html" class="nav-link active">About Us</a>
-            <a href="sell.html" class="nav-link">Sell/Rent</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="index.html" class="nav_bar">Home</a>
+            <a href="properties.html" class="nav_bar">Properties</a>
+            <a href="about.html" class="nav_bar selected">About Us</a>
+            <a href="sell.html" class="nav_bar">Sell/Rent</a>
+            <a href="contact.html" class="nav_bar">Contact</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
     </header>
@@ -24,14 +24,16 @@
         <section class="section-container">
             <h1 class="section-title">Our Mission and Values</h1>
             
-            <div style="display: flex; flex-wrap: wrap; gap: 30px; text-align: left; margin-bottom: 40px;">
-                <div style="flex: 1 1 45%; min-width: 300px;">
-                    <h2 style="color: darkcyan;">Who We Are</h2>
-                    <p style="color: black;">Easy Homes was founded in 2010 with a simple goal: to make finding the perfect home as simple and stress-free as possible. We believe in transparency, integrity, and putting our clients first in every transaction. Our team of local experts is dedicated to helping you achieve your real estate dreams, whether you're buying your first home or selling a commercial property.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h2 class="sub-title">Who We Are</h2>
+                    <p class="about-text">
+                        A-List was founded in 2010 with a simple goal: to make finding the perfect home as simple and stress-free as possible. We believe in transparency, integrity and putting our clients first in every transaction. Our team of local experts is dedicated to helping you achieve your real estate dreams, whether you're buying your first home or selling a commercial property.
+                    </p>
                 </div>
-                <div style="flex: 1 1 45%; min-width: 300px;">
-                    <h2 style="color: darkcyan;">Our Core Values</h2>
-                    <ul style="color: black;">
+                <div class="about-item">
+                    <h2 class="sub-title">Our Core Values</h2>
+                    <ul class="about-list">
                         <li><strong>Simplicity:</strong> Clean, straightforward transactions.</li>
                         <li><strong>Integrity:</strong> Honest advice and transparent dealings.</li>
                         <li><strong>Community:</strong> Building lasting relationships with our clients.</li>
@@ -40,19 +42,19 @@
             </div>
 
             <h2 class="section-title">Meet Our Agents</h2>
-            <div class="card-list" style="margin-bottom: 40px;">
-                <div class="property-card" style="width: 250px;">
-                    <img src="https://via.placeholder.com/250x180/607d8b/FFFFFF?text=Agent+A" alt="Agent Alice" class="property-image">
-                    <div class="card-content" style="text-align: center;">
-                        <h3 style="margin-bottom: 0;">Alice Smith</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">Lead Broker | 15 Years Experience</p>
+            <div class="card-list agents-list">
+                <div class="property-card agent-card">
+                    <img alt="Agent Alice" class="property-image agent-image">
+                    <div class="card-content agent-content">
+                        <h3 class="agent-name">Alice Smith</h3>
+                        <p class="agent-role">Lead Broker | 15 Years Experience</p>
                     </div>
                 </div>
-                <div class="property-card" style="width: 250px;">
-                    <img src="https://via.placeholder.com/250x180/607d8b/FFFFFF?text=Agent+B" alt="Agent Bob" class="property-image">
-                    <div class="card-content" style="text-align: center;">
-                        <h3 style="margin-bottom: 0;">Bob Johnson</h3>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">Rental Specialist | Commercial</p>
+                <div class="property-card agent-card">
+                    <img alt="Agent Bob" class="property-image agent-image">
+                    <div class="card-content agent-content">
+                        <h3 class="agent-name">Bob Johnson</h3>
+                        <p class="agent-role">Rental Specialist | Commercial</p>
                     </div>
                 </div>
             </div>
@@ -60,9 +62,8 @@
     </main>
 
     <footer class="footer">
-        <p>A-List Homes Real Estate</p>
+        <p>A-List Real Estate</p>
     </footer>
-
 
 </body>
 </html>

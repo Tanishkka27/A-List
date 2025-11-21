@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Your Property</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/sell.css">
 </head>
 <body data-theme="bright">
     
     <header class="header">
-        <a href="index.html" class="logo">EasyHomes</a>
+        <a href="index.html" class="logo">A-LIST</a>
         <nav class="nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="properties.html" class="nav-link">Properties</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="sell.html" class="nav-link active">Sell/Rent</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="index.html" class="nav_bar">Home</a>
+            <a href="properties.html" class="nav_bar">Properties</a>
+            <a href="about.html" class="nav_bar">About Us</a>
+            <a href="sell.html" class="nav_bar selected">Sell/Rent</a>
+            <a href="contact.html" class="nav_bar">Contact</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
     </header>
@@ -24,10 +24,13 @@
         <section class="section-container">
             <h1 class="section-title">List Your Property with Us</h1>
             
-            <p style="text-align: center;color: black; max-width: 600px; margin: 0 auto 30px;">Fill out the form below to provide us with the initial details of your property. An agent will contact you shortly.</p>
+            <p class="center-text description-text">
+                Fill out the form below to provide us with the initial details of your property. 
+                An agent will contact you shortly.
+            </p>
 
-            <form style="max-width: 600px; margin: 0 auto; background-color: aliceblue; padding: 30px; border-radius: 8px;">
-                <h2 style="color: darkcyan; margin-bottom: 20px; text-align: center;">Property Submission Form</h2>
+            <form class="property-form">
+                <h2 class="form-heading">Property Submission Form</h2>
                 
                 <div class="form-group">
                     <label for="listing-type">I want to:</label>
@@ -43,12 +46,12 @@
                     <input type="text" id="address" name="address" required>
                 </div>
                 
-                <div class="form-group" style="display: flex; gap: 15px;">
-                    <div style="flex: 1;">
+                <div class="form-row">
+                    <div class="form-group flex-1">
                         <label for="beds">Bedrooms</label>
                         <input type="number" id="beds" name="beds" min="1" required>
                     </div>
-                    <div style="flex: 1;">
+                    <div class="form-group flex-1">
                         <label for="baths">Bathrooms</label>
                         <input type="number" id="baths" name="baths" min="1" required>
                     </div>
@@ -74,13 +77,15 @@
                     <input type="email" id="contact-email" name="contact-email" required>
                 </div>
                 
-                <button type="submit" class="btn primary-btn" style="width: 100%; margin-top: 15px; background-color: darkslategrey; color: antiquewhite;">Submit Property Details</button>
+                <button type="submit" class="btn primary-btn submit-btn">
+                    Submit Property Details
+                </button>
             </form>
         </section>
     </main>
 
     <footer class="footer">
-        <p>A-List Homes Real Estate</p>
+        <p>A-List Real Estate</p>
     </footer>
 
 </body>

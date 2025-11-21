@@ -9,24 +9,25 @@
 <body>
     
     <header class="header">
-        <a href="index.html" class="logo">EasyHomes</a>
+        <a href="index.html" class="logo">A-LIST</a>
         <nav class="nav">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="properties.html" class="nav-link">Properties</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="sell.html" class="nav-link">Sell/Rent</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="index.html" class="nav_bar selected">Home</a>
+            <a href="properties.html" class="nav_bar">Properties</a>
+            <a href="about.html" class="nav_bar">About Us</a>
+            <a href="sell.html" class="nav_bar">Sell/Rent</a>
+            <a href="contact.html" class="nav_bar">Contact</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
     </header>
 
     <main>
-        <section class="hero-section" style="background-color: darkslategrey; color: antiquewhite; padding: 80px 20px; text-align: center;">
+        <section class="hero-section">
             <div class="hero-content">
-                <h1 style="color: antiquewhite;">Find Your Home, Simply.</h1>
-                <p style="margin-bottom: 20px;">The best way to buy, sell, or rent real estate.</p>
-                <div class="search-bar" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
-                    <input type="text" placeholder="Location, beds, or price..." style="padding: 10px; width: 300px; max-width: 70%; border: none; border-radius: 4px;">
+                <h1>Find Your Home, Simply.</h1>
+                <p>The best way to buy, sell, or rent real estate.</p>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Location, beds, or price...">
                     <a href="properties.html" class="btn primary-btn">Search</a>
                 </div>
             </div>
@@ -34,48 +35,52 @@
 
         <section class="section-container">
             <h2 class="section-title">Featured Listings</h2>
+
             <div class="card-list">
                 
                 <div class="property-card">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/466378675.jpg?k=47439be8a91e422a1dbef4f02630d6c86f1266a815d7bd8f21b2c5ce0492bcc1&o=" alt="Luxury Villa" class="property-image">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/466378675.jpg?k=47439be8a91e422a1dbef4f02630d6c86f1266a815d7bd8f21b2c5ce0492bcc1&o=" 
+                         alt="Luxury Villa" class="property-image">
                     <div class="card-content">
-                        <h3 style="color: darkcyan;">Luxury Villa</h3>
-                        <p style="font-weight: bold;">$1,250,000</p>
-                        <p style="font-size: 0.9rem; color: darkolivegreen;">4 Bed | 3 Bath | NYC</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">View Details</a>
+                        <h3 class="property-title">Luxury Villa</h3>
+                        <p class="price">$1,250,000</p>
+                        <p class="details">4 Bed | 3 Bath | NYC</p>
+                        <a href="#" class="btn secondary-btn">View Details</a>
                     </div>
                 </div>
 
                 <div class="property-card">
-                    <img src="https://cdn.sanity.io/images/v48q37k7/production/d09208183125ab47493d5de2f8710b6faa27d7cc-3000x2000.jpg?auto=format&fit=max&q=90&w=1500" alt="Cozy Apartment" class="property-image">
+                    <img src="https://cdn.sanity.io/images/v48q37k7/production/d09208183125ab47493d5de2f8710b6faa27d7cc-3000x2000.jpg?auto=format&fit=max&q=90&w=1500" 
+                         alt="Cozy Apartment" class="property-image">
                     <div class="card-content">
-                        <h3 style="color: darkcyan;">Cozy Apartment</h3>
-                        <p style="font-weight: bold;">$2,500 / month</p>
-                        <p style="font-size: 0.9rem; color: darkolivegreen;">2 Bed | 2 Bath | Miami</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">View Details</a>
+                        <h3 class="property-title">Cozy Apartment</h3>
+                        <p class="price">$2,500 / month</p>
+                        <p class="details">2 Bed | 2 Bath | Miami</p>
+                        <a href="#" class="btn secondary-btn">View Details</a>
                     </div>
                 </div>
 
                 <div class="property-card">
-                    <img src="https://content.instantoffices.com/sc/Prod/images/centres/1600width/99790/99790-631180.jpg" alt="Office Space" class="property-image">
+                    <img src="https://content.instantoffices.com/sc/Prod/images/centres/1600width/99790/99790-631180.jpg" 
+                         alt="Office Space" class="property-image">
                     <div class="card-content">
-                        <h3 style="color: darkcyan;">Office Space</h3>
-                        <p style="font-weight: bold;">On Request</p>
-                        <p style="font-size: 0.9rem; color: darkolivegreen;">5,000 sqft | Commercial</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">View Details</a>
+                        <h3 class="property-title">Office Space</h3>
+                        <p class="price">On Request</p>
+                        <p class="details">5,000 sqft | Commercial</p>
+                        <a href="#" class="btn secondary-btn">View Details</a>
                     </div>
                 </div>
             </div>
-            
-            <div class="cta-box" style="background-color: darkslategrey; color: darkolivegreen; padding: 30px; border-radius: 8px; margin-top: 40px;">
-                <h2 style="color: antiquewhite;; margin-bottom: 15px;">Ready to Start Your Search?</h2>
+
+            <div class="cta-box">
+                <h2>Ready to Start Your Search?</h2>
                 <a href="properties.html" class="btn secondary-btn">Browse All Listings</a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>A-List Homes Real Estate</p>
+        <p>A-List Real Estate</p>
     </footer>
 
 </body>

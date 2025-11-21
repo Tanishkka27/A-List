@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Properties - Buy & Rent</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/properties.css">
 </head>
 <body data-theme="bright">
     
     <header class="header">
-        <a href="index.html" class="logo">EasyHomes</a>
+        <a href="index.html" class="logo">A-LIST</a>
         <nav class="nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="properties.html" class="nav-link active">Properties</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="sell.html" class="nav-link">Sell/Rent</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="index.html" class="nav_bar">Home</a>
+            <a href="properties.html" class="nav_bar selected">Properties</a>
+            <a href="about.html" class="nav_bar">About Us</a>
+            <a href="sell.html" class="nav_bar">Sell/Rent</a>
+            <a href="contact.html" class="nav_bar">Contact</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
     </header>
@@ -24,80 +24,83 @@
         <section class="section-container">
             <h1 class="section-title">Current Listings</h1>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 30px; padding: 10px; background-color: var(--color-surface); border-radius: 8px;">
-                <select style="padding: 8px; border-radius: 4px;">
+            <div class="filter-box">
+                <select class="filter-select">
                     <option>Type: All</option>
                     <option>For Sale</option>
                     <option>For Rent</option>
                 </select>
-                <input type="number" placeholder="Min Beds" style="padding: 8px; border-radius: 4px; width: 100px;">
-                <select style="padding: 8px; border-radius: 4px;">
+
+                <input type="number" placeholder="Min Beds" class="filter-input">
+
+                <select class="filter-select">
                     <option>Sort by: Price High</option>
                     <option>Sort by: Price Low</option>
                     <option>Sort by: Newest</option>
                 </select>
-                <button class="btn primary-btn" style="padding: 8px 15px;">Apply Filter</button>
+
+                <button class="btn primary-btn filter-btn">Apply Filter</button>
             </div>
 
             <div class="card-list">
                 
                 <div class="property-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLm_NRr0Tj8l8WaVSSorKqAB0l5Y__u0yfcw&s" alt="House for Sale" class="property-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLm_NRr0Tj8l8WaVSSorKqAB0l5Y__u0yfcw&s" class="property-image">
                     <div class="card-content">
                         <h3>Family Home</h3>
-                        <p style="font-weight: bold;">$550,000</p>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">3 Bed | 2 Bath | Suburb</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                        <p class="price">$550,000</p>
+                        <p class="details">3 Bed | 2 Bath | Suburb</p>
+                        <a href="#" class="btn secondary-btn details-btn">Details</a>
                     </div>
                 </div>
                 
                 <div class="property-card">
-                    <img src="https://www.brightlogic-estateagents.co.uk/KENS/upload/2402-1.jpg" alt="Studio for Rent" class="property-image">
+                    <img src="https://www.brightlogic-estateagents.co.uk/KENS/upload/2402-1.jpg" class="property-image">
                     <div class="card-content">
                         <h3>Studio Rental</h3>
-                        <p style="font-weight: bold;">$1,800 / month</p>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">1 Bed | 1 Bath | Downtown</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                        <p class="price">$1,800 / month</p>
+                        <p class="details">1 Bed | 1 Bath | Downtown</p>
+                        <a href="#" class="btn secondary-btn details-btn">Details</a>
                     </div>
                 </div>
 
                 <div class="property-card">
-                    <img src="https://media.istockphoto.com/id/1166526747/photo/office-building-exterior-with-parking-lot.jpg?s=612x612&w=0&k=20&c=PPVPFrtzm0H-OF26frvF8GE0g5j0pPFZyBxmgFN5bOs=" alt="Commercial Property" class="property-image">
+                    <img src="https://media.istockphoto.com/id/1166526747/photo/office-building-exterior-with-parking-lot.jpg?s=612x612&w=0&k=20&c=PPVPFrtzm0H-OF26frvF8GE0g5j0pPFZyBxmgFN5bOs=" class="property-image">
                     <div class="card-content">
                         <h3>Commercial Lot</h3>
-                        <p style="font-weight: bold;">$800,000</p>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">Zoned C-1 | 1 Acre</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                        <p class="price">$800,000</p>
+                        <p class="details">Zoned C-1 | 1 Acre</p>
+                        <a href="#" class="btn secondary-btn details-btn">Details</a>
                     </div>
                 </div>
 
                 <div class="property-card">
-                    <img src="https://i.pinimg.com/originals/e5/5a/c8/e55ac83e643a44caa46b5a97d2bee0e1.jpg" alt="Penthouse" class="property-image">
+                    <img src="https://i.pinimg.com/originals/e5/5a/c8/e55ac83e643a44caa46b5a97d2bee0e1.jpg" class="property-image">
                     <div class="card-content">
                         <h3>Luxury Penthouse</h3>
-                        <p style="font-weight: bold;">$3,500,000</p>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">5 Bed | 4 Bath | City View</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                        <p class="price">$3,500,000</p>
+                        <p class="details">5 Bed | 4 Bath | City View</p>
+                        <a href="#" class="btn secondary-btn details-btn">Details</a>
                     </div>
                 </div>
 
                 <div class="property-card">
-                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/596399705.jpg?k=0d4df5fc0a4952380be995d136e896aee6608f84e9c7af836688c269c4adccdb&o=" alt="Vacation Home" class="property-image">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/596399705.jpg?k=0d4df5fc0a4952380be995d136e896aee6608f84e9c7af836688c269c4adccdb&o=" class="property-image">
                     <div class="card-content">
                         <h3>Beach Getaway</h3>
-                        <p style="font-weight: bold;">$4,200 / month</p>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">3 Bed | 2 Bath | Near Ocean</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                        <p class="price">$4,200 / month</p>
+                        <p class="details">3 Bed | 2 Bath | Near Ocean</p>
+                        <a href="#" class="btn secondary-btn details-btn">Details</a>
                     </div>
                 </div>
 
                 <div class="property-card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2uhPdKKNGjMXBO-oNJGRADeBX5FFnIAwLQiUy7NtAArVSZTkb2yekSlQQIMlHrlc8B6uJjKd2TxJttxs4xn6taEY2P_Ze4e3kmCWxiHrcw6L9V2KR0lKr1bmvHL_XOst3T3eXRVIT3yU/s1920/modern-home.jpg" alt="New Build" class="property-image">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2uhPdKKNGjMXBO-oNJGRADeBX5FFnIAwLQiUy7NtAArVSZTkb2yekSlQQIMlHrlc8B6uJjKd2TxJttxs4xn6taEY2P_Ze4e3kmCWxiHrcw6L9V2KR0lKr1bmvHL_XOst3T3eXRVIT3yU/s1920/modern-home.jpg" class="property-image">
                     <div class="card-content">
                         <h3>New Build Home</h3>
-                        <p style="font-weight: bold;">$720,000</p>
-                        <p style="font-size: 0.9rem; color: var(--color-text);">4 Bed | 3 Bath | Quick Sale</p>
-                        <a href="#" class="btn secondary-btn" style="margin-top: 10px; display: block;">Details</a>
+                        <p class="price">$720,000</p>
+                        <p class="details">4 Bed | 3 Bath | Quick Sale</p>
+                        <a href="#" class="btn secondary-btn details-btn">Details</a>
                     </div>
                 </div>
                 
@@ -106,7 +109,7 @@
     </main>
 
     <footer class="footer">
-        <p>A-List Homes Real Estate</p>
+        <p>A-List Real Estate</p>
     </footer>
 
 </body>
