@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +21,7 @@
             <a href="sell.html" class="nav_bar">Sell/Rent</a>
             <a href="contact.html" class="nav_bar selected">Contact</a>
         </nav>
-        <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
+        <button id="theme_change" class="theme_change_btn">☀️</button>
     </header>
 
     <main>
@@ -35,7 +39,7 @@
                     <p class="office-hours">Mon - Fri: 9:00 AM - 5:00 PM</p>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" id="contact_form">
                     <h2 class="sub-title form-title">Send Us a Message</h2>
                     
                     <div class="form-group">
@@ -59,6 +63,8 @@
                     </div>
                     
                     <button type="submit" class="btn primary-btn btn-full">Send Message</button>
+
+                    <p id="form_msg" class="form_msg"></p>
                 </form>
 
             </div>
@@ -68,6 +74,6 @@
     <footer class="footer">
         <p>A-List Real Estate</p>
     </footer>
-
+    <script src="./js/contact.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +12,17 @@
     
     <header class="header">
         <a href="index.html" class="logo">A-LIST</a>
-        <nav class="nav">
+
+        <nav class="nav" id="nav_menu">
             <a href="index.html" class="nav_bar">Home</a>
             <a href="properties.html" class="nav_bar selected">Properties</a>
             <a href="about.html" class="nav_bar">About Us</a>
             <a href="sell.html" class="nav_bar">Sell/Rent</a>
             <a href="contact.html" class="nav_bar">Contact</a>
         </nav>
-        <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
+
+        <button id="nav_toggle" class="nav_toggle_btn">☰</button>
+        <button id="theme_change" class="theme_change_btn">☀️</button>
     </header>
 
     <main>
@@ -25,92 +30,29 @@
             <h1 class="section-title">Current Listings</h1>
 
             <div class="filter-box">
-                <select class="filter-select">
-                    <option>Type: All</option>
-                    <option>For Sale</option>
-                    <option>For Rent</option>
+                <select class="filter-select" id="filter_type">
+                    <option value="all">Type: All</option>
+                    <option value="sale">For Sale</option>
+                    <option value="rent">For Rent</option>
                 </select>
 
-                <input type="number" placeholder="Min Beds" class="filter-input">
+                <input type="number" placeholder="Min Beds" class="filter-input" id="filter_beds">
 
-                <select class="filter-select">
-                    <option>Sort by: Price High</option>
-                    <option>Sort by: Price Low</option>
-                    <option>Sort by: Newest</option>
+                <select class="filter-select" id="sort_price">
+                    <option value="high">Sort by: Price High</option>
+                    <option value="low">Sort by: Price Low</option>
                 </select>
 
-                <button class="btn primary-btn filter-btn">Apply Filter</button>
+                <button class="btn primary-btn filter-btn" id="apply_filter">Apply Filter</button>
             </div>
 
-            <div class="card-list">
-                
-                <div class="property-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLm_NRr0Tj8l8WaVSSorKqAB0l5Y__u0yfcw&s" class="property-image">
-                    <div class="card-content">
-                        <h3>Family Home</h3>
-                        <p class="price">$550,000</p>
-                        <p class="details">3 Bed | 2 Bath | Suburb</p>
-                        <a href="#" class="btn secondary-btn details-btn">Details</a>
-                    </div>
-                </div>
-                
-                <div class="property-card">
-                    <img src="https://www.brightlogic-estateagents.co.uk/KENS/upload/2402-1.jpg" class="property-image">
-                    <div class="card-content">
-                        <h3>Studio Rental</h3>
-                        <p class="price">$1,800 / month</p>
-                        <p class="details">1 Bed | 1 Bath | Downtown</p>
-                        <a href="#" class="btn secondary-btn details-btn">Details</a>
-                    </div>
-                </div>
-
-                <div class="property-card">
-                    <img src="https://media.istockphoto.com/id/1166526747/photo/office-building-exterior-with-parking-lot.jpg?s=612x612&w=0&k=20&c=PPVPFrtzm0H-OF26frvF8GE0g5j0pPFZyBxmgFN5bOs=" class="property-image">
-                    <div class="card-content">
-                        <h3>Commercial Lot</h3>
-                        <p class="price">$800,000</p>
-                        <p class="details">Zoned C-1 | 1 Acre</p>
-                        <a href="#" class="btn secondary-btn details-btn">Details</a>
-                    </div>
-                </div>
-
-                <div class="property-card">
-                    <img src="https://i.pinimg.com/originals/e5/5a/c8/e55ac83e643a44caa46b5a97d2bee0e1.jpg" class="property-image">
-                    <div class="card-content">
-                        <h3>Luxury Penthouse</h3>
-                        <p class="price">$3,500,000</p>
-                        <p class="details">5 Bed | 4 Bath | City View</p>
-                        <a href="#" class="btn secondary-btn details-btn">Details</a>
-                    </div>
-                </div>
-
-                <div class="property-card">
-                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/596399705.jpg?k=0d4df5fc0a4952380be995d136e896aee6608f84e9c7af836688c269c4adccdb&o=" class="property-image">
-                    <div class="card-content">
-                        <h3>Beach Getaway</h3>
-                        <p class="price">$4,200 / month</p>
-                        <p class="details">3 Bed | 2 Bath | Near Ocean</p>
-                        <a href="#" class="btn secondary-btn details-btn">Details</a>
-                    </div>
-                </div>
-
-                <div class="property-card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2uhPdKKNGjMXBO-oNJGRADeBX5FFnIAwLQiUy7NtAArVSZTkb2yekSlQQIMlHrlc8B6uJjKd2TxJttxs4xn6taEY2P_Ze4e3kmCWxiHrcw6L9V2KR0lKr1bmvHL_XOst3T3eXRVIT3yU/s1920/modern-home.jpg" class="property-image">
-                    <div class="card-content">
-                        <h3>New Build Home</h3>
-                        <p class="price">$720,000</p>
-                        <p class="details">4 Bed | 3 Bath | Quick Sale</p>
-                        <a href="#" class="btn secondary-btn details-btn">Details</a>
-                    </div>
-                </div>
-                
-            </div>
+            <div class="card-list" id="property_list"></div>
         </section>
     </main>
 
     <footer class="footer">
         <p>A-List Real Estate</p>
     </footer>
-
+    <script src="./js/properties.js"></script>
 </body>
 </html>

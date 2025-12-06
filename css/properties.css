@@ -1,4 +1,4 @@
-/* FILTER BOX */
+
 .filter-box {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     justify-content: center;
     margin-bottom: 30px;
     padding: 10px;
-    background-color: var(--color-surface);
+    background-color: black;
     border-radius: 8px;
 }
 
@@ -21,22 +21,19 @@
     padding: 8px 15px;
 }
 
-/* PROPERTY CARD OVERRIDES */
 .price {
     font-weight: bold;
 }
 
 .details {
     font-size: 0.9rem;
-    color: var(--color-text);
+    color: black;
 }
 
 .details-btn {
     margin-top: 10px;
     display: block;
 }
-
-
 
 
 .card-list {
@@ -48,15 +45,15 @@
 
 .property-card {
     width: 300px;
-    background-color: var(--color-surface);
+    background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px var(--color-shadow);
-    transition: box-shadow var(--transition-speed);
+    box-shadow: 0 4px 8px white;
+    transition: box-shadow white;
 }
 
 .property-card:hover {
-    box-shadow: 0 8px 16px var(--color-shadow);
+    box-shadow: 0 8px 16px darkgrey;
 }
 
 .property-card h3 {
@@ -97,6 +94,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: black;
 }
 
 .logo {
@@ -111,28 +109,28 @@
     gap: 20px;
 }
 
-.nav-link {
+.nav_bar {
     text-decoration: none;
-    color: var(--color-text);
+    color: black;
     padding: 5px 0;
-    transition: color var(--transition-speed);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav_bar:hover, 
+.nav_bar.selected {
     color: brown;
 }
 
-.theme-toggle-btn {
+.theme-change-btn {
     background: none;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: transform var(--transition-speed);
 }
 
-.theme-toggle-btn:hover {
-    transform: scale(1.1);
+.theme-change-btn:hover {
+    border-color: #fff;
 }
+
 
 @media (max-width: 768px) {
     .header {
@@ -148,42 +146,21 @@
 }
 
 
-
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --color-primary: #1e88e5;
-    --color-background: #ffffff;
-    --color-surface: #f4f4f4;
-    --color-text: #333333;
-    --color-shadow: rgba(0, 0, 0, 0.1);
-    --transition-speed: 0.2s;
-}
-
-body[data-theme="dark"] {
-    --color-primary: #64b5f6;
-    --color-background: #1f1f1f;
-    --color-surface: #2c2c2c;
-    --color-text: #e0e0e0;
-    --color-shadow: rgba(255, 255, 255, 0.1);
-}
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: var(--color-text);
-    background-color: var(--color-background);
-    transition: background-color var(--transition-speed), color var(--transition-speed);
+    background-color: white;
 }
 
 h1, h2 {
-    color: var(--color-text);
+    color: black;
 }
 
 .section-container {
@@ -207,17 +184,15 @@ h1, h2 {
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color var(--transition-speed), transform var(--transition-speed);
 }
 
 .primary-btn {
-    background-color: var(--color-primary);
+    background-color: rgb(79, 77, 228);
     color: white;
 }
 
 .primary-btn:hover {
     background-color: #0d47a1;
-    transform: translateY(-1px);
 }
 
 .secondary-btn {
@@ -232,13 +207,49 @@ h1, h2 {
 .footer {
     padding: 20px;
     text-align: center;
-    background-color: var(--color-surface);
-    border-top: 1px solid var(--color-shadow);
-    color: var(--color-text);
+    background-color: whitesmoke;
+    border-top: 1px solid darkslategrey;
+    color: darkslategrey;
 }
 
 @media (max-width: 768px) {
     .section-container {
         padding: 30px 15px;
     }
+}
+
+
+
+.property-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.filter-select:hover,
+.filter-input:hover {
+    border-color: darkcyan;
+}
+
+.nav_bar {
+    transition: color 0.3s ease;
+}
+
+.property-image {
+    transition: transform 0.4s ease;
+}
+
+.property-card:hover .property-image {
+    transform: scale(1.03);
 }

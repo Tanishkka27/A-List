@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,57 +10,50 @@
     <title>About Us - Our Mission</title>
     <link rel="stylesheet" href="./css/about.css">
 </head>
-<body data-theme="bright">
-    
+
+<body class="bright_theme">
+
     <header class="header">
         <a href="index.html" class="logo">A-LIST</a>
-        <nav class="nav">
+
+        <nav class="nav" id="nav_menu">
             <a href="index.html" class="nav_bar">Home</a>
             <a href="properties.html" class="nav_bar">Properties</a>
             <a href="about.html" class="nav_bar selected">About Us</a>
             <a href="sell.html" class="nav_bar">Sell/Rent</a>
             <a href="contact.html" class="nav_bar">Contact</a>
         </nav>
-        <button id="theme-toggle" class="theme-toggle-btn">☀️</button>
+
+        <button id="theme_btn" class="theme_btn">☀️</button>
     </header>
 
     <main>
-        <section class="section-container">
-            <h1 class="section-title">Our Mission and Values</h1>
+        <section class="section_container">
+            <h1 class="section_title">Our Mission and Values</h1>
             
-            <div class="about-grid">
-                <div class="about-item">
-                    <h2 class="sub-title">Who We Are</h2>
-                    <p class="about-text">
-                        A-List was founded in 2010 with a simple goal: to make finding the perfect home as simple and stress-free as possible. We believe in transparency, integrity and putting our clients first in every transaction. Our team of local experts is dedicated to helping you achieve your real estate dreams, whether you're buying your first home or selling a commercial property.
+            <div class="about_grid">
+                <div class="about_item">
+                    <h2 class="sub_title">Who We Are</h2>
+                    <p class="about_text">
+                        A-List was founded in 2010 with a simple goal: to make finding the perfect home as simple and stress-free as possible. 
+                        We believe in transparency, integrity and putting our clients first. Our team of local experts is dedicated to helping 
+                        you achieve your real estate dreams.
                     </p>
                 </div>
-                <div class="about-item">
-                    <h2 class="sub-title">Our Core Values</h2>
-                    <ul class="about-list">
+
+                <div class="about_item">
+                    <h2 class="sub_title">Our Core Values</h2>
+                    <ul class="about_list">
                         <li><strong>Simplicity:</strong> Clean, straightforward transactions.</li>
                         <li><strong>Integrity:</strong> Honest advice and transparent dealings.</li>
-                        <li><strong>Community:</strong> Building lasting relationships with our clients.</li>
+                        <li><strong>Community:</strong> Relationships that last.</li>
                     </ul>
                 </div>
             </div>
 
-            <h2 class="section-title">Meet Our Agents</h2>
-            <div class="card-list agents-list">
-                <div class="property-card agent-card">
-                    <img alt="Agent Alice" class="property-image agent-image">
-                    <div class="card-content agent-content">
-                        <h3 class="agent-name">Alice Smith</h3>
-                        <p class="agent-role">Lead Broker | 15 Years Experience</p>
-                    </div>
-                </div>
-                <div class="property-card agent-card">
-                    <img alt="Agent Bob" class="property-image agent-image">
-                    <div class="card-content agent-content">
-                        <h3 class="agent-name">Bob Johnson</h3>
-                        <p class="agent-role">Rental Specialist | Commercial</p>
-                    </div>
-                </div>
+            <h2 class="section_title">Meet Our Agents</h2>
+
+            <div class="card_list agents_list" id="agents_box">
             </div>
         </section>
     </main>
@@ -64,6 +61,6 @@
     <footer class="footer">
         <p>A-List Real Estate</p>
     </footer>
-
+    <script src="./js/about.js"></script>
 </body>
 </html>
